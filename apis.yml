@@ -1,7 +1,24 @@
 aid: traderion
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/traderion.png
 name: Traderion
-description: Traderion is a company surfaced as a portfolio company of seedcamp and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Traderion is a fintech company that combines technology and gamification
+  to build digital learning platforms for banks and financial institutions. Its products
+  include a gamified sales and trading simulator covering equities, FX, bonds, and
+  commodities with AI-powered feedback, a MiFID II regulatory-compliance training
+  platform built as a virtual simulated bank, and a risk-profiling platform for identifying
+  and detecting risky behavioral patterns within organizations. A Seedcamp portfolio
+  company, Traderion does not currently publish a public developer portal or API.
 url: https://raw.githubusercontent.com/api-evangelist/traderion/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fintech
+- Trading
+- Training
+- Simulation
+- Compliance
+- Risk Management
+- Financial Markets
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/traderion-domain-security.yml
 - type: Website
-  url: http://traderion.com
+  url: https://traderion.com
+- type: LLMsTxt
+  url: llms/traderion-llms.txt
+- type: Twitter
+  url: https://twitter.com/traderionalpha
+- type: LinkedIn
+  url: https://www.linkedin.com/company/10130393/
+- type: Facebook
+  url: https://www.facebook.com/Traderion/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
